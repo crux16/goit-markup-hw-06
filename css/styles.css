@@ -283,7 +283,15 @@ body {
 .socmed-footer.socmed-icon:active {
     background-color: var(--tenth-color);
 }
-
+.form-label:hover .form-icon,
+.form-label:focus .form-icon {
+    fill: var(--third-color);
+}
+.form-label:hover .input-text,
+.form-label:focus .input-text {
+    border: 1px solid var(--third-color);
+    color: var(--third-color);
+}
 /* container, alignment and resizing */
 .container {
     width: 1200px;
@@ -580,50 +588,29 @@ body {
 .form-label {
     text-align: left;
 }
-.input {
-    display: flex;
-    width: 100%;
-    gap: 5px;
-    font-size: 12px;
-    padding: 11px 11px 11px 16px;
-    border-radius: 4px;
-    color: var(--theme-color);
-    border: 1px solid var(--default-color);
-    transition-property: All;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.input:hover, .input:focus {
-    border-color: var(--third-color);
-    color: var(--third-color);
-}
-.input-text {
-    flex-basis: 100%;
-    border: none;
-}
-.input:hover .form-icon,
-.input:focus .form-icon {
-    fill: var(--third-color);
-}
-.input:hover .input-text,
-.input:focus .input-text {
-    color: var(--third-color);
-    border-left: 2px solid var(--third-color);
-}
-.input .input-tex:hover,
-.input .input-text:focus {
-    color: var(--third-color);
-    border-left: 1px solid var(--third-color);
-}
 .form-icon {
+    position: relative;
+    top: 35px;
+    left: -22px;
     width: 18px;
     height: 18px;
     fill: var(--theme-color);
 }
+.input-text {
+    width: 100%;
+    padding: 11px;
+    padding-left: 38px;
+    border-radius: 4px;
+    border: 1px solid var(--theme-color);
+
+    transition-property: All;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .input-comment {
     max-height: 420px;
     padding: 16px;
-    border-radius: 12px;
+    border-radius: 4px;
     background-color: rgb(255, 255, 255);
     white-space: pre-wrap;
     word-break: break-word;
@@ -700,15 +687,6 @@ body {
     align-items: center;
     width: 105px;
 }
-.text-subs {
-    display: flex;
-}
-.input-footer {
-    display: flex;
-    width: 264px;
-    border: 1px solid var(--secondary-color);
-    padding: 8px 8px 8px 16px;
-}
 .footer-send {
     display: flex;
     justify-content: space-between;
@@ -721,13 +699,24 @@ body {
 }
 .input-email:hover,
 .input-email:focus {
-    border-left: 2px solid currentColor;
+    border-left: 1px solid currentColor;
+    border-color: var(--nineth-color);
 }
 .input-email {
     color: currentColor;
     background-color: transparent;
     border: transparent;
-    width: 100%;
+    width: 264px;
+    padding: 8px 16px;
+    border-radius: 4px;
+
+    display: flex;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    transition-property: All;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-check {
     width: 16px;
@@ -738,6 +727,7 @@ body {
     border: 1px solid rgba(46, 47, 66, 0.40);
 }
 .check-border {
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
