@@ -288,7 +288,8 @@ body {
     fill: var(--third-color);
 }
 .form-label:hover .input-text,
-.form-label:focus .input-text {
+.form-label:focus .input-text,
+.input-comment:hover, .input-comment:focus {
     border: 1px solid var(--third-color);
     color: var(--third-color);
 }
@@ -601,7 +602,7 @@ body {
     padding: 11px;
     padding-left: 38px;
     border-radius: 4px;
-    border: 1px solid var(--theme-color);
+    border: 1px solid rgba(46, 47, 66, 0.40);
 
     transition-property: All;
     transition-duration: 250ms;
@@ -609,18 +610,14 @@ body {
 }
 .input-comment {
     max-height: 420px;
-    padding: 16px;
+    padding: 8px 16px;
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
-    white-space: pre-wrap;
-    word-break: break-word;
-    hyphens: auto;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     font-weight: 400;
     letter-spacing: 0.5px;
-    border: 1px solid var(--theme-color);
-    min-height: 100px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
     cursor: text;
 
     overflow: auto;
@@ -748,9 +745,19 @@ body {
     background-color: var(--sixth-color);
 }
 .privacy {
+    font-family: inherit;
     text-decoration: none;
+    color: var(--eight-color);
+    line-height: 14px;
+    letter-spacing: 0.48px;
+
+    transition-property: All;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .privacy:hover,
 .privacy:focus {
+    color: var(--third-color);
+    line-height: 16px;
     text-decoration: underline;
 }
