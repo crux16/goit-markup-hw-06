@@ -747,3 +747,10 @@ body {
 .input-check:checked + .check-border{
     background-color: var(--sixth-color);
 }
+.privacy {
+    text-decoration: none;
+}
+.privacy:hover,
+.privacy:focus {
+    text-decoration: underline;
+}
