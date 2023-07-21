@@ -149,7 +149,8 @@ body {
     cursor: pointer;
     transition-property: background, border;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-tim*+
+    ing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .proj-cardlist {
     text-decoration: none;
@@ -298,8 +299,7 @@ body {
     color: var(--third-color);
 }
 .form-label .input-text:focus {
-    position: absolute;
-    font-weight: 500;
+    position: relative;
     padding-top: 24px;
     padding-bottom: 24px;
     border: 1px solid var(--third-color);
@@ -617,10 +617,10 @@ body {
 }
 .form-icon {
     position: absolute;
-    top: 28px;
+    top: 32px;
     left: 10px;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     fill: var(--theme-color);
 
     z-index: 1;
@@ -811,6 +811,8 @@ body {
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-text:focus + .form-icon {
-    top: 33px;
+    top: 40px;
+    width: 24px;
+    height: 24px;
     fill: var(--third-color);
 }
