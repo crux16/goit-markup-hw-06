@@ -221,24 +221,23 @@ body {
 .btn-telegram:hover,
 .btn-primary:hover,
 .filter-btn:hover,
-.filter-btn.active{
+.filter-btn.active,
+.btn-send:focus,
+.btn-telegram:focus,
+.btn-primary:focus,
+.filter-btn:focus {
     border-color: var(--third-color);
     box-shadow: 
     0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 
     0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     color: var(--secondary-color, #FFFFFF);
-    background-color: var(--sixth-color, #404BBF);
+    background-color: var(--sixth-color);
 }
 .btn-send:active,
 .btn-telegram:active,
-.btn-primary:active {
-    color: var(--fourth-color);
-}
-.btn-send:focus,
-.btn-telegram:focus,
-.btn-primary:focus,
-.filter-btn:focus{
+.btn-primary:active,
+.filter-btn:active{
     border-color: var(--third-color);
     box-shadow: 
     0px 2px 2px 0px rgba(0, 0, 0, 0.12),
@@ -299,13 +298,12 @@ body {
     color: var(--third-color);
 }
 .form-label .input-text:focus {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    position: absolute;
+    font-weight: 500;
+    padding-top: 24px;
+    padding-bottom: 24px;
     border: 1px solid var(--third-color);
     color: var(--third-color);
-}
-.input-text::placeholder{
-    content: "write here";
 }
 /* container, alignment and resizing */
 .container {
