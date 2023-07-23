@@ -17,7 +17,7 @@
 /* default */
 h1,h2,h3,h4,h5,h6,p { margin: 0;}
 html { box-sizing: border-box;}
-*,*::after,*::before { box-sizing: inherit; outline: none;}
+*,*::after,*::before { box-sizing: inherit; }
 img { display: block; max-width: 100%; height: auto;}
 button, input, a {outline: none;}
 .list { list-style: none; padding: 0; margin: 0;}
@@ -149,8 +149,7 @@ body {
     cursor: pointer;
     transition-property: background, border;
     transition-duration: 250ms;
-    transition-tim*+
-    ing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .proj-cardlist {
     text-decoration: none;
@@ -178,10 +177,6 @@ body {
 }
 
 /* pseudo-elements */
-.logo:focus {
-    text-decoration: underline;
-    text-decoration-color: var(--tenth-color);
-}
 .menu-nav .nav:focus,
 .menu-nav .nav:hover {
     top: 25px;
@@ -602,7 +597,7 @@ body {
     text-align: center;
 }
 .form-box {
-    color: var(--eight-color);
+    color: var(--seventh-color);
     font-size: 12px;
     margin-top: 16px;
     gap: 8px;
@@ -780,7 +775,7 @@ body {
     position: relative;
     font-family: inherit;
     text-decoration: none;
-    color: var(--eight-color);
+    color: var(--third-color);
     line-height: 14px;
     letter-spacing: 0.48px;
     border-bottom: 0.05px solid currentColor;
@@ -803,7 +798,6 @@ body {
     position: absolute;
     top: 15px;
     left: 0;
-    
     
     animation: under ease;
     animation-delay: 100ms;
